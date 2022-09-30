@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+		  <meta charset="utf-8">
+		  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PORTFOLIO</title>
+
+		  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"> 
+		  <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">             
+		  <link rel="stylesheet" href="css/bootstrap.min.css">
+		  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		  <link rel="stylesheet" href="css/tooplate-style.css">
+		  <link rel="stylesheet" href="css/magnific-popup.css">
+
+
+
+      </head>
+
+      <body>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/bg-img-01.jpg">
+		
+          <section class="container tm-page-1-content">
+            <div class="row">
+              <div class="col-md-20 ml-auto tm-text-white">
+                <header><h1> <br><br> My Name is Mitch Jester V. Francisco</h1></header>
+                <p>
+                <br><br>
+				</p>
+                
+
+              </div>
+            </div>
+
+          </section>
+        </div>
+
+
+        <div id="tm-section-2" class="parallax-window" data-parallax="scroll" data-image-src="img/bg-img-02.jpg">
+          <section class="container tm-page-1-content tm-page-2">
+            <div class="row">
+              <article class="col-md-20 tm-article tm-bg-white-transparent">
+                <header><h2 > Left Column</h2></header>
+                <p> Section: WMA 4A <br><br> Age: 22 <br><br> Birthday: May 27, 2000</p>
+				
+              </article>
+
+              <article class="col-md-20 tm-article tm-bg-white-transparent">
+                <header><h2>Right Column</h2></header>
+				<p> Hobby: Playing Basketball <br><br> Address: #394 Rizal St. Brgy. Paraiso Tarlac City 
+						<br><br> Email: mj.francisco027@gmail.com </p>
+                
+	
+
+          <script src="js/jquery-1.11.3.min.js"></script>  
+          <script src="js/parallax.min.js"></script>   
+          <script type="text/javascript" src="slick/slick.min.js"></script> 
+          <script src="js/jquery.magnific-popup.min.js"></script>
+          
+
+          <script>
+
+            function setCarousel() {
+
+              var slider = $('.tm-img-slider');
+
+              if (slider.hasClass('slick-initialized')) {
+                slider.slick('destroy');
+              }
+
+              if($(window).width() > 991){
+                  slider.slick({
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                  });
+                }
+                else {
+                 slider.slick({
+                  dots: true,
+                  infinite: true,
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                });
+               }
+             }
+
+             $(document).ready(function(){
+
+              setCarousel();
+              $('.tm-img-slider').magnificPopup({
+                delegate: 'a',
+                type: 'image'
+
+
+              });
+
+              $(window).resize(function() {
+                setCarousel();
+              });
+            });
+
+          </script>
+        </body>
+        </html>
